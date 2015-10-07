@@ -35,7 +35,42 @@
 
 		</hr>
 	
+		<div class = "container">
+			<h1> Image Galerry </h1>
 
+			<!-- these are the thumbnail images. they are laid out using the bootstrap grid they all have the class crop-image-->
+			<div class = "row">
+				<div class = "col-md-3">
+					<img class = "crop-img" src= "img_1.jpg">
+				</div>
+				<div class = "col-md-3">
+					<img class = "crop-img" src= "img_2.jpg">
+				</div>
+				<div class = "col-md-3">
+					<img class = "crop-img" src= "img_3.jpg">
+				</div>
+				<div class = "col-md-3">
+					<img class = "crop-img" src= "img_4.jpg">
+				</div>
+
+				<div class = "col-md-3">
+					<img class = "crop-img" src= "img_5.jpg">
+				</div>
+			</div> <!-- end row -->
+
+			<div class = "row"> 
+				<div class = "col-md-12">
+					<img id = "bigImage" class = "large-img" src = "img_1.jpg">
+				</div>
+			</div>	
+
+			<script type="text/javascript">
+				$(".crop-img").click(function() {
+
+					$("#bigImage").attr("src",$(this).attr('src'));
+				});
+
+			</script>
 		
 	</body>
 </html>
