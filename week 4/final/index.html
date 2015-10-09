@@ -8,33 +8,50 @@
 	      type = "text/css"
 	      href = "css/styles.css" />
 
+    <!-- Load external fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	<!-- Load javascript -->
+	<script src = "js/jquery-1.11.3.min.js"></script>
 
 </head>
 <body>
-	<h1> Key Security Principles </h1>	
 	<div class = "container">
+		<h1> Key Security Principles </h1>	
+
 		<div class = "row"> 
-			<div class = "col-md-12 thin_border"> 
-				<img width="70%" src="images/security.jpg" /> 
+			<div class = "col-md-12"> 
+				<img width="50%" src="images/security.jpg" /> 
 			</div>
-            <div> 
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-9">  
+				<p id="instructions"> foo</p> 
+			</div>
+		</div> 
+   
+
+        <div class = "row">   
+            <div class="col-md-3"> 
+
 				<ul>
-					<li>Confidentiality</li>
-					<li>Integrity </li>
-					<li>Availability </li>
+					<li><a href = "#" id = "confidentiality" onclick="displayDefinition('c')">Confidentiality</a></li>
+					<li><a href = "#" id = "integrity" onclick="displayDefinition('i')">Integrity </a></li>
+					<li><a href = "#" id = "availability" onclick="displayDefinition('a')">Availability</a> </li>
 				</ul>
 			</div>	
+			<div class="col-md-9">			
+				<p id="definition"> <img src = "images/triad.png" width = "30%"/></p>
+			</div>
+
 		</div>
+
+
 	</div>
 
-	<div class="row">
-			<div class="col-md-3 thin_border">
-				Some content here for panel 1
-			</div>
-			<div class="col-md-9 thin_border">
-				Some content here for panel 2
-			</div>
-		</div>
+	<script src = "js/script.js"></script>
+
 </body>
 
 
