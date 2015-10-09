@@ -1,5 +1,6 @@
 
 
+
    	// display the instructions with javascript
    	var instructions = "Select a link below to see the definition:";
     $('#instructions').text(instructions);
